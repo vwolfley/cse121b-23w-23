@@ -15,7 +15,7 @@ const dayOfWeek = date.getDay();
 
 let message1;
 
-if (dayOfWeek >= 1 || dayOfWeek <= 5) {
+if (dayOfWeek >= 1 && dayOfWeek <= 5) {
   message1 = "Hang in there!";
 } else {
   message1 = "Whoohoo!  It is the weekend!";
@@ -137,3 +137,7 @@ element.addEventListener("change", () => {
 
 // Consider adding a "Filter by" feature that allows users to filter the list of temples
 // This will require changes to both the HTML and the JavaScript files
+
+function filterBy(){
+  reset();
+}
